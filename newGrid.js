@@ -77,20 +77,7 @@ for(let i=start_row,k=0; k<state.length; ++i,++k){
     }
 }
 
-/*
-function bitBoard(state){
-    Board=createGrid();
-  if(remind.length!=0) Board=updateBoard();
-for(let i=start_row,k=0; k<state.length; ++i,++k){
-    for(let j=start_col,m=0; m<state[k].length; ++j,++m){
-     Board[i][j]=state[k][m];
-     //if(Board[i+1][j]==1) stop=true;
-    }
-  }
-  //if(Board[start_row+state.length][]==1) stop=true;
-}
-*/
-//console.table(Board);
+
 }
 
 
