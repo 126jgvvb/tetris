@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>www.tetris.com</title>
+        <link   rel="stylesheet"    href="styles.css"/>
+
+        <script src="mainX.js"></script>
+        <script src="newGrid.js"></script>
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <img src="" id="nextBlock" alt="currentBlock"/>
+                </td>
+                <td id="fist">
+        <canvas id="paper"></canvas>
+        </td>
+        <td>
+            <div    class="div1">
+                <h1><center>GAME SETTINGS</center></h1>
+                <ul type="none">
+                <li><label>score:</label><span  id="score">0</span></li>
+                <li><label>Level:</label>
+                    <select  id="level" onchange="mode(this.value)">
+                        <option value="easy"   selected>easy</option>
+                        <option value="medium" >medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    </li>
+                    <li><label>Highest  score:</label><span id="greatValue">none</span></li>
+                    <li><label>sound:</label>
+                        <select>
+                            <option value="on" selected>on</option>
+                            <option value="off">off</option>
+                        </select>
+                    </li>
+                </ul>    
+                <input id="reset" type="button" value="reset" onclick="ResetGame()"/>
+                <input id="stateBtn" type="button" value="pause" onclick="handleState(this.value)"/>
+                <section>
+                    <label><center>from chargedMatrix.laboratory</center></label>
+                </section>
+                <img    id="image"/>
+            </div>
+        </td>
+            </tr>
+        </table>
+
+
+    </body>
+</html>
